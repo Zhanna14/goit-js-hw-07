@@ -27,7 +27,6 @@ const images = [
   },
 ];
 
-
 const newIl = images
   .map(
     image =>
@@ -37,12 +36,3 @@ const newIl = images
 
 gallery.insertAdjacentHTML('beforeend', newIl);
 
-// Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
-
-// const newIl = document.createElement(`li`);
-// const elelementLi = images.forEach(function (image) {
-//   elelementLi.srs = image.url;
-//   elelementLi.alt = image.alt;
-// })
-
-// list.insertAdjacentHTML('beforeend', elelementLi);
