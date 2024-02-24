@@ -16,19 +16,25 @@
 }
 
 .user {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
   margin-top: 8px;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 40px;
-   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .create {
-    border: none;
+  border: none;
   margin-top: 16px;
   border-radius: 8px;
- 
+
   padding: 8px 16px;
   width: 86px;
   height: 40px;
@@ -39,5 +45,9 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+}
 
+.create:focus,
+.create:hover {
+  background: #6c8cff;
 }
