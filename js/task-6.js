@@ -11,7 +11,7 @@ const createButton = document.querySelector('[data-create]');
 const destroyButton = document.querySelector('[data-destroy]');
 
 createButton.addEventListener('click', () => {
-  box.innerHTML = "";
+  box.innerHTML = '';
   let size = 30;
   const value = parseInt(inputAmount.value);
 
@@ -24,9 +24,9 @@ createButton.addEventListener('click', () => {
     size += 10;
   }
 
-  inputAmount.value = "";
+  inputAmount.value = '';
 });
 
 destroyButton.addEventListener('click', () => {
-  box.innerHTML = "";
+  box.innerHTML = '';
 });
