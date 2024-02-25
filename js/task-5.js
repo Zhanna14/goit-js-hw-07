@@ -1,5 +1,5 @@
 const clickMe = document.querySelector('.change-color');
-const color = document.querySelector('body');
+const body = document.querySelector('body');
 const valueColor = document.querySelector('.color');
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -9,6 +9,7 @@ function getRandomHexColor() {
 clickMe.addEventListener('click', handleClick);
 
 function handleClick() {
-  color.style.backgroundColor = getRandomHexColor();
-  valueColor.textContent = getRandomHexColor();
+  const newColor = getRandomHexColor();
+  body.style.backgroundColor = newColor; // застосувати колір до фону
+  valueColor.textContent = newColor; // також оновити span.textContent тим самим кольором
 }
